@@ -23,10 +23,11 @@ class AdminPanelProvider extends PanelProvider
     public function panel(Panel $panel): Panel
     {
         return $panel
-        ->brandName('Learn Laravel Filament')
+            ->brandName('filam')
             ->default()
             ->id('admin')
-            ->path('admin')
+            ->sidebarFullyCollapsibleOnDesktop()
+            ->path('/')
             ->login()
             ->colors([
                 'primary' => Color::Indigo,
@@ -39,7 +40,6 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Admin/Widgets'), for: 'App\\Filament\\Admin\\Widgets')
             ->widgets([
                 Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
