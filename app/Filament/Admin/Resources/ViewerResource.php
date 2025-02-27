@@ -27,7 +27,7 @@ class ViewerResource extends Resource
 {
     protected static ?string $model = Viewer::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-eye';
 
     public static function form(Form $form): Form
     {

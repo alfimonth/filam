@@ -78,7 +78,8 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'en'),
+    // 'locale' => env('APP_LOCALE', 'en'),
+    'locale' => 'id',
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
@@ -123,6 +124,11 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
-    'Str' => Illuminate\Support\Str::class
+    'Str' => Illuminate\Support\Str::class,
+
+    // 'providers' => [
+
+    //     Livewire\LivewireServiceProvider::class,
+    // ],
 
 ];
